@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag for character set -->
+    <meta charset="UTF-8">
+    <!-- Ensures the site is responsive on different devices like phone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+      <!--Browser icon-->
+  <link rel="icon" href="images/favicon-128x128.png" type="image/png" sizes="128x128" />
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="images/site.webmanifest">
+
+    <!-- Google fonts for Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>About Us</title>
+</head>
+<body>
+    <!-- Main nav bar -->
+    <nav class="header">
+        <div class="app-logo">
+            <a href="index.html"><img src="images/NewPVPN.png" alt="App Logo" class="logo-img" /></a>
+
+        </div>
+        <!-- Nav links for different pages -->
+        <div class="nav-actions">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="speedtest.html">Speed Test</a></li>
+                <li class="nav-link"><a href="comparison.html">Comparison</a></li>
+                <li class="nav-link"><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Contact me functionality -->
+        <div class="nav-buttons">
+        <a href="mailto:x21445372@student.ncirl.ie" class="btn btn-contact-me">Contact Me</a>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+    <img class="cover-photo" src="images/nnAB.jpg" alt="coverPhoto">
+        <div class="about-container">
+            <!-- Section about the project -->
+<div class="about-project">
+    <h1>About the Project</h1>
+    <p>
+        The P-VPN Method is a comparison and testing platform for VPNs,
+        combining speed testing, leak testing, and protocol evaluation. 
+        It integrates technologies such as OpenVPN, WireGuard, and ProtonVPN 
+        into an interactive web application with local storage and a user-friendly interface.
+    </p>
+</div>
+
+<!-- Section for myself -->
+<div class="My-story">
+    <h1>My Story</h1>
+    <p>
+        My name is Price asemota from Co. Dublin and
+        as a Computer Science student passionate about digital privacy,
+        I built this platform to simplify VPN evaluation for users and 
+        develop my skills in full-stack web development and cybersecurity.
+    </p>
+</div>
+            <!-- introducing myself -->
+            <div class="our-team">
+                <h1>Meet The Team</h1>
+                <div class="teams-image">
+                    <!-- my picture displayed in card format -->
+                    <div class="card">
+                        <img class="team-img" src="images/IMG_4976.jpeg" alt="">
+                        <div class="box-content">
+                            <h3 class="title">Price</h3>
+                            <span class="post">Founder</span>
+                        </div>
+                    </div>
+
+<style>
+    
+:root {
+    --color-background: #141414;
+    --color-text-white: #FFFFFF;
+    --color-placeholder: #C4C4C4;
+    --color-light-black: #29384D;
+    --color-border-1: #383838;
+    --color-actions: #38E078;
+    --color-border: #E5E8EB;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: var(--color-text-white);
+}
+.logo-img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 65px;
+    box-shadow: 0 0 0.8 0 var(--color-border);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--color-text-white);
+}
+
+.nav-link a:hover {
+    color: var(--color-actions);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.btn-contact-me {
+    background-color: var(--color-actions);
+    color: var(--color-text-white);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact-me:hover {
+    background-color: #2ec96b;
+}
+
+
+.container .cover-photo {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px;
+}
+
+.teams-image {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-light-black);
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .35s ease;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    background: var(--color-light-black);
+    border: 1px solid var(--color-border-1);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card:hover::before {
+    opacity: .75;
+    transform: scale(8);
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .35s ease-out ;
+}
+
+.card:hover .team-img {
+    opacity: .4;
+}
+
+.card .box-content {
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-20px, -20px);
+}
+
+.card:hover .box-content {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: .10s;
+}
+
+.footer {
+    display: flex;
+    font-size: 14px;
+    box-shadow: 0 -4px 3px rgba(50, 50, 50, .75);
+}
+
+.footer-container {
+    margin: auto;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .input-name {
+        flex-direction: column;
+        gap: 12px;
+    }
+    input, textarea, .btn-submit {
+        width: 100%;
+    }
+    .social, .social-contact {
+        width: 100%;
+    }
+}
+.about-project {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: var(--color-light-black);
+    border-radius: 12px;
+    border: 1px solid var(--color-border-1);
+}
+.about-project h1 {
+    margin-bottom: 12px;
+}
+
+.My-story {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: var(--color-light-black);
+    border-radius: 12px;
+    border: 1px solid var(--color-border-1);
+}
+.My-story {
+    margin-bottom: 12px;
+}
+
+
+</style>
